@@ -1,0 +1,45 @@
+section.hero-section {
+  display: grid;
+  margin-block: 1rem;
+
+  .text-content {
+    margin-block: auto;
+    max-width: 60ch;
+    margin-block-start: 2.5rem;
+    text-wrap: pretty;
+
+    h1 {
+      margin-block-end: 1rem;
+    }
+  }
+
+  img {
+    width: calc(100% - 16px);
+    max-width: 240px;
+    height: calc(100% - 16px);
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 16px 16px var(--secondary);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-inline: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 2fr 5fr;
+    gap: 0 4rem;
+    margin-block-start: 2rem;
+    margin-block-end: 4rem;
+
+    .text-content {
+      margin-block-start: unset;
+      margin-block: auto;
+    }
+
+    img {
+      max-width: unset;
+      margin-inline: unset;
+      margin-block-end: 16px;
+    }
+  }
+}
