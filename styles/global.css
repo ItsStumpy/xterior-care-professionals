@@ -1,4 +1,8 @@
 /* Set Up Variables to be Used Across Application */
+@import "variables.css";
+@import "font.css";
+@import "components.css";
+
 :root {
   /* Container Variables */
   --padding-inline: 2rem;
@@ -30,7 +34,8 @@ body {
 input,
 button,
 select,
-textarea {
+textarea,
+option {
   font: inherit;
 }
 
@@ -96,160 +101,4 @@ video {
 /* Primary Buttons */
 button {
   border: 0;
-}
-
-/* ----- Reused Styles ----- */
-.primary-button {
-  background-color: var(--tertiary-300);
-  color: var(--tertiary-900);
-  padding: 0.5rem 1.25rem;
-  font-weight: 700;
-  border-radius: 4px;
-  text-decoration: none;
-  box-shadow: 4px 4px var(--tertiary);
-
-  :hover {
-    background-color: var(--tertiary-200);
-  }
-
-  :active {
-    background-color: var(--accent);
-  }
-
-  :focus {
-    outline: solid;
-  }
-}
-
-/* Navigation */
-header nav.navigation-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-block: 0.5rem;
-  font-size: 1.5rem;
-
-  > a {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    font-weight: 700;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--tertiary);
-  }
-
-  img.nav-logo {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1.5rem;
-    font-size: 1.25rem;
-  }
-}
-
-/* Footer */
-footer {
-  background-color: var(--tertiary-600);
-  color: var(--secondary-50);
-  margin-block-start: 2rem;
-  padding-block: 2rem;
-
-  ul {
-    list-style-type: none;
-  }
-
-  .info-grid {
-    display: grid;
-    gap: 1.5rem;
-    margin-block-end: 1.5rem;
-
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 1fr 2fr;
-      margin-block-end: unset;
-      margin-block: 2rem;
-    }
-  }
-
-  section.business-hours {
-    width: 100%;
-    max-width: 200px;
-    margin-inline: auto;
-    margin-block-end: 2rem;
-
-    @media screen and (min-width: 768px) {
-      margin-inline: unset;
-      margin-inline-end: auto;
-    }
-
-    h2 {
-      margin-block-end: 1rem;
-    }
-
-    ul {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-block-end: 1rem;
-      margin-inline: -8px;
-
-      li {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 4px 8px;
-
-        span:last-child {
-          margin-left: auto;
-        }
-
-        &.active {
-          background-color: var(--secondary);
-          border-radius: 4px;
-        }
-      }
-    }
-  }
-
-  .contact-form {
-    h2 {
-      margin-block-end: -1rem;
-    }
-
-    button {
-      justify-self: start;
-    }
-  }
-}
-
-.bottom-footer-bar {
-  background-color: var(--tertiary);
-  color: white;
-  padding-block: 1rem;
-
-  div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-
-    li img {
-      min-width: 24px 24px;
-    }
-  }
 }

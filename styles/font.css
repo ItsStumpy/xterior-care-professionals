@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-family: "Raleway", sans-serif;
+  color: inherit, var(--tertiary);
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.75rem;
+}
+
+p,
+span,
+a,
+label,
+small,
+details {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: inherit, var(--tertiary);
+}
+
+small {
+  font-size: 0.95rem;
+}
+
+.large-text {
+  font-size: 1.5rem;
+}
+
+.regular-text {
+  font-size: 1.125rem;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  p,
+  span,
+  a,
+  label,
+  small,
+  details {
+    font-size: 1.125rem;
+  }
+}
