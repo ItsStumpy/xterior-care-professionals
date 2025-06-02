@@ -172,6 +172,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
+    align-items: center;
 
     p {
       order: 1;
@@ -183,10 +184,19 @@ footer {
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 1rem;
 
-      li img {
-        min-width: 24px 24px;
+      li a {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        display: flex;
+
+        img {
+          width: 24px;
+          height: 24px;
+          justify-self: center;
+        }
       }
     }
 
@@ -201,5 +211,76 @@ footer {
         font-size: 1rem;
       }
     }
+  }
+}
+
+.faq-section {
+  color: var(--tertiary);
+  max-width: 768px;
+
+  h2 {
+    margin-block-end: 1.25rem;
+  }
+
+  details {
+    background-color: var(--tertiary-50);
+    padding-block: 16px;
+    padding-inline: 24px;
+    border-radius: 8px;
+    margin-block-end: 1rem;
+    overflow: hidden;
+  }
+
+  details[open] {
+    background-color: var(--tertiary-100);
+    transition: background-color 0.5s;
+  }
+
+  details * {
+    margin: 0;
+  }
+
+  summary {
+    font-weight: 700;
+    list-style-type: none;
+
+    > span {
+      display: inline-block;
+    }
+  }
+
+  summary:hover {
+    cursor: pointer;
+  }
+
+  details::details-content {
+    color: var(--tertiary-600);
+    block-size: 0;
+
+    transition: block-size 0.5s, content-visibility 0.5s;
+    transition-behavior: allow-discrete;
+  }
+
+  details[open]::details-content {
+    block-size: auto;
+  }
+
+  details[open] span {
+    padding-block-end: 2px;
+    border-image-slice: 1;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(
+      to left,
+      var(--tertiary-300),
+      var(--secondary-500)
+    );
+    transition: border-image-source 0.5s;
+  }
+
+  details > p {
+    padding-block: 1rem;
+  }
+
+  summary {
   }
 }
