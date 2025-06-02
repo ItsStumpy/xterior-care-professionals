@@ -1,3 +1,11 @@
+/* If image does not have a source, then add a placeholder background image until it has an image source. */
+img[src=""] {
+  background-image: url("https://placehold.co/400");
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+}
+
 section.hero-section {
   display: grid;
   margin-block: 1rem;
@@ -40,6 +48,97 @@ section.hero-section {
       max-width: unset;
       margin-inline: unset;
       margin-block-end: 16px;
+    }
+  }
+}
+
+section.affordable-section {
+  display: grid;
+  position: relative;
+  margin-block-start: 2rem;
+  margin-block-end: 3rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .title {
+      margin-block-end: 0.25rem;
+    }
+
+    .text-content {
+      max-width: 50ch;
+    }
+
+    .details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block-end: 0.5rem;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+
+      .list-image {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+
+    a.primary-button {
+      width: max-content;
+      justify-self: start;
+    }
+  }
+
+  .logo-container {
+    position: absolute;
+    width: calc(100% + 4rem);
+    margin-inline: -2rem;
+    bottom: -48px;
+    overflow: hidden;
+    height: 260px;
+  }
+
+  .logo-accent {
+    object-fit: contain;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+    right: -60px;
+    width: 260px;
+
+    @media screen and (min-width: 300px) {
+      right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 3fr 2fr;
+    margin-block-start: 3rem;
+    margin-block-end: 5rem;
+    gap: 3rem;
+
+    .logo-accent {
+      position: relative;
+      opacity: 1;
+      right: unset;
+      width: 100%;
+    }
+
+    .logo-container {
+      position: relative;
+      display: flex;
+      align-content: center;
+      width: 100%;
+      margin-inline: unset;
+      height: unset;
+      bottom: unset;
     }
   }
 }
