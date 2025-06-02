@@ -4,6 +4,8 @@
 @import "components.css";
 
 :root {
+  interpolate-size: allow-keywords;
+
   /* Container Variables */
   --padding-inline: 2rem;
   --content-max-width: 120ch;
