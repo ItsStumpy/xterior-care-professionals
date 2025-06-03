@@ -142,3 +142,105 @@ section.affordable-section {
     }
   }
 }
+
+.services-container {
+  background-color: var(--primary);
+}
+
+section.services-section {
+  --timing: 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+  gap: 1.5rem;
+
+  a.title {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: start;
+    text-decoration: none;
+    transition: font-weight var(--timing), color var(--timing);
+  }
+
+  a.title:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    max-width: 20px;
+    aspect-ratio: 1;
+    margin-top: 12px;
+    background-color: var(--tertiary);
+    mask-image: url("../../assets/svgs/diagonal-arrow.svg");
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+
+    transition: mask-size var(--timing), margin-top var(--timing),
+      background-color, var(--timing);
+  }
+
+  a.title:hover {
+    color: var(--secondary);
+    font-weight: 550;
+  }
+
+  a.title:hover:after {
+    mask-size: 18px 18px;
+    background-color: var(--secondary);
+    margin-top: 10px;
+  }
+
+  ul.services-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+
+    li {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    li img {
+      border-radius: 8px;
+      box-shadow: 6px 6px 0px var(--secondary);
+    }
+
+    li:hover img {
+      box-shadow: 6px 6px 0px var(--accent);
+    }
+
+    li a {
+      text-decoration: none;
+      transition: font-weight var(--timing);
+    }
+
+    li a::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
+    li:hover a {
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    ul.services-list {
+      flex-direction: row;
+    }
+  }
+}
