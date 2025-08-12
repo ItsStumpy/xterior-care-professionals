@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xterior Care Professionals</title>
-    <meta name="description" content="" />
+    <title>Document</title>
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/pages/home.css" />
+    <link rel="stylesheet" href="/styles/pages/services.css" />
   </head>
-  <body class="home">
+  <body class="services">
+    <!-- Navigation Module -->
     <header class="content-grid">
       <nav class="navigation-bar">
         <a href="/">
@@ -27,24 +28,9 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="content-grid">
-      <section class="hero-section">
-        <div class="text-content">
-          <h1 class="title">Pressure Washing at&nbsp;the Right&nbsp;Cost</h1>
-          <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-            perspiciatis modi libero aliquid beatae soluta repellat deleniti
-            iure minima, reprehenderit quisquam aliquam repellendus totam. Eum
-            cumque tenetur tempora? Numquam, iste.
-          </p>
-        </div>
-        <img
-          src="/assets/images/xterior-care-professionals-house-and-patio.jpg"
-          alt=""
-          class="hero-image"
-        />
-      </section>
-
+      <!-- Services Section -->
       <div class="full-width services-container">
         <section class="services-section">
           <a class="h2 title" href="#">Services</a>
@@ -65,6 +51,7 @@
         </section>
       </div>
 
+      <!-- Affordable  -->
       <section class="affordable-section">
         <div class="content">
           <h2 class="title">Affordable Pressure Washing</h2>
@@ -74,18 +61,31 @@
             magnam quia dolore aut deleniti velit ut explicabo facere aliquam a
             soluta illum maiores.
           </p>
-          <ul class="details-list">
-            <li class="quote">
-              <span>Free Quote</span>
+          <ul class="details-list columns-two">
+            <li class="pressure-nozzle">
+              <span>Pressure Washing</span>
             </li>
-            <li class="person">
-              <span>Commercial & Residential</span>
+            <li class="pressure-nozzle">
+              <span>Soft Wash</span>
             </li>
-            <li class="paper">
-              <span>Licensed & Insured</span>
+            <li class="pressure-nozzle">
+              <span>Roof Wash</span>
+            </li>
+            <li class="pressure-nozzle">
+              <span>Window Cleaning</span>
+            </li>
+            <li class="pressure-nozzle">
+              <span>Gutter Clean Out</span>
+            </li>
+            <li class="pressure-nozzle">
+              <span>Pavers and Sealant</span>
             </li>
           </ul>
-          <a href="/contact" class="primary-button">Contact Us</a>
+          <a href="/contact" class="primary-button">Get a Quote</a>
+          <p class="disclaimer">
+            *Pavers and Sealant are a separate offering due to variability of
+            job ask.
+          </p>
         </div>
         <div class="logo-container">
           <img
@@ -96,34 +96,121 @@
         </div>
       </section>
 
-      <section class="faq-section">
-        <h2>FAQs</h2>
+      <section class="packages-section">
+        <h2 class="sr-only">Pressure washing packages offered:</h2>
+        <ul class="packages">
+          <li>
+            <article class="package">
+              <h3>Simple Package</h3>
+              <ul>
+                <li><span>Soft Wash</span></li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article class="package highlighted">
+              <h3>Basic Package</h3>
+              <ul>
+                <li><span>Pressure Washing</span></li>
+                <li><span>Window</span></li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article class="package">
+              <h3>Complete Package</h3>
+              <ul>
+                <li><span>Pressure Washing</span></li>
+                <li><span>Window</span></li>
+                <li><span>Roof</span></li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article class="package">
+              <h3>Advanced Package</h3>
+              <ul>
+                <li><span>Pressure Washing</span></li>
+                <li><span>Window</span></li>
+                <li><span>Roof</span></li>
+                <li><span>Gutter</span></li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-        <details name="faq">
-          <summary>
-            <span>How long does a typical pressure washing job last?</span>
-          </summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut
-            nisi quisquam quaerat. Rem consectetur nulla, eligendi deleniti, ad
-            error, magni unde harum consequuntur eaque omnis nihil ex
-            exercitationem magnam.
-          </p>
-        </details>
-        <details name="faq">
-          <summary><span>How long?</span></summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut
-            nisi quisquam quaerat. Rem consectetur nulla, eligendi deleniti, ad
-            error, magni unde harum consequuntur eaque omnis nihil ex
-            exercitationem magnam.
-          </p>
-        </details>
+      <section class="previous-work-gallery">
+        <h2 class="sr-only">Previous pressure washing jobs:</h2>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption>Name of business, Month Year</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x400"
+            alt="description of pressure washing job"
+          />
+          <figcaption></figcaption>
+        </figure>
       </section>
     </main>
 
-    <footer class="content-grid full-width">
-      <div>
+    <!-- Footer Module -->
+    <footer class="full-width content-grid">
       <div class="info-grid">
         <section class="business-hours">
           <h2 class="hours-title large-text">Business Hours</h2>

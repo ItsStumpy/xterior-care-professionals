@@ -1,0 +1,103 @@
+@import "variables.css";
+
+.packages-section {
+  margin-block: 0px 4rem;
+
+  > ul.packages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 16px;
+
+    @media screen and (width < 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width < 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    > li {
+      list-style-type: none;
+
+      .package {
+        height: 100%;
+        border-radius: 8px;
+        padding-block: 24px;
+        padding-inline: 16px;
+        background-color: var(--tertiary-50);
+
+        &.highlighted {
+          background-color: var(--secondary-50);
+        }
+
+        h3 {
+          font-weight: 500;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-block: 16px 0px;
+
+          > li {
+            position: relative;
+            list-style-type: none;
+            padding-inline: 24px 0px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              place-self: center;
+              justify-self: center;
+              left: 0;
+              background-image: url("/assets/svgs/water-droplet.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 12px;
+              aspect-ratio: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.previous-work-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-block: 0rem 2rem;
+
+  figure {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:hover figcaption {
+      transform: translateY(0%);
+    }
+
+    img {
+      background-color: #ddd;
+      width: 100%;
+      aspect-ratio: 3/2;
+    }
+
+    figcaption {
+      transition: transform 0.3s;
+      position: absolute;
+      transform: translateY(100%);
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      z-index: 2;
+      padding-block: 8px;
+      padding-inline: 12px;
+      background-color: hsla(0, 0%, 0%, 0.6);
+      color: white;
+    }
+  }
+}

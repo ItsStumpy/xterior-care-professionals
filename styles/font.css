@@ -14,7 +14,9 @@
 h1,
 .h1,
 h2,
-.h2 {
+.h2,
+h3,
+.h3 {
   font-family: "Raleway", sans-serif;
   color: inherit, var(--tertiary);
 }
@@ -29,12 +31,18 @@ h2,
   font-size: 1.75rem;
 }
 
+h3,
+.h3 {
+  font-size: 1.125rem;
+}
+
 p,
 span,
 a,
 label,
 small,
-details {
+details,
+figcaption {
   line-height: 1.5;
   font-size: 1rem;
   font-family: "Nunito Sans", sans-serif;

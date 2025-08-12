@@ -35,4 +35,6 @@
 
   /* Page Background */
   --page-background: #fcfcfc;
+
+  --tablet-size: 768px;
 }
