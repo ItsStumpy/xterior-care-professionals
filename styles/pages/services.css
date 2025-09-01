@@ -67,9 +67,13 @@
 
 .previous-work-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-block: 0rem 2rem;
+
+  @media screen and (width < 360px) {
+    grid-template-columns: 1fr;
+  }
 
   figure {
     position: relative;
