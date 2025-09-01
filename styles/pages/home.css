@@ -86,6 +86,10 @@ section.affordable-section {
         li {
           margin-bottom: 1rem;
         }
+
+        @media screen and (width < 420px) {
+          column-count: 1;
+        }
       }
 
       li {
