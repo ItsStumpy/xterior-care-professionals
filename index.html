@@ -129,7 +129,9 @@
           <small>*Holiday hours may vary</small>
         </section>
 
-        <form method="post" name="Contact Form" class="contact-form" data-netlify="true">
+        <form class="contact-form" method="post" action="/thankyou.html" onsubmit="submit" name="Contact Form"
+          data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="hpfield">
+          <input class="hidden" name="hpfield">
           <h2>Get a Free Quote</h2>
 
           <div class="form-group">
@@ -149,8 +151,13 @@
               <option value="commercial">Commercial</option>
               <option value="apartment">Apartment Complex</option>
             </select>
-            <!-- Add text area element for longer messages -->
           </div>
+
+          <div class="form-group">
+            <label>Message: <textarea name="message"></textarea></label>
+          </div>
+
+          <div data-netlify-recaptcha="true"></div>
 
           <button class="primary-button" type="submit" value="submit">
             Submit
