@@ -15,7 +15,7 @@
     <nav class="navigation-bar">
       <a href="/">
         <img src="/assets/svgs/xterior-care-professionals-logo.svg" alt="" class="nav-logo" />
-        <span>Xterior Care Professionals Test</span>
+        <span>Xterior Care Professionals</span>
       </a>
       <ul>
         <li><a href="/services">Services</a></li>
@@ -36,12 +36,12 @@
           cumque tenetur tempora? Numquam, iste.
         </p>
       </div>
-      <img src="/assets/images/xterior-care-professionals-house-and-patio.jpg" alt="" class="hero-image" />
+      <img src="/assets/images/pic_9.jpg" alt="" class="hero-image" />
     </section>
 
     <div class="full-width services-container">
       <section class="services-section">
-        <a class="h2 title" href="#">Services</a>
+        <a class="h2 title" href="/services">Services</a>
         <ul class="services-list">
           <li>
             <img src="" alt="" />
@@ -53,7 +53,7 @@
           </li>
           <li>
             <img src="" alt="" />
-            <a href="/services/#aparment-complexes">Apartment Complex</a>
+            <a href="/services/#apartment-complexes">Apartment Complex</a>
           </li>
         </ul>
       </section>
@@ -113,57 +113,56 @@
   </main>
 
   <footer class="content-grid full-width">
-    <div>
-      <div class="info-grid">
-        <section class="business-hours">
-          <h2 class="hours-title large-text">Business Hours</h2>
-          <ul>
-            <li><span>Monday</span> <span>8am-6pm</span></li>
-            <li><span>Tuesday</span> <span>8am-6pm</span></li>
-            <li><span>Wednesday</span> <span>8am-6pm</span></li>
-            <li><span>Thursday</span> <span>8am-6pm</span></li>
-            <li><span>Friday</span> <span>8am-6pm</span></li>
-            <li><span>Saturday</span> <span>Closed</span></li>
-            <li><span>Sunday</span> <span>Closed</span></li>
-          </ul>
-          <small>*Holiday hours may vary</small>
-        </section>
+    <div class="info-grid">
+      <section class="business-hours">
+        <h2 class="hours-title large-text">Business Hours</h2>
+        <ul>
+          <li><span>Monday</span> <span>8am-6pm</span></li>
+          <li><span>Tuesday</span> <span>8am-6pm</span></li>
+          <li><span>Wednesday</span> <span>8am-6pm</span></li>
+          <li><span>Thursday</span> <span>8am-6pm</span></li>
+          <li><span>Friday</span> <span>8am-6pm</span></li>
+          <li><span>Saturday</span> <span>Closed</span></li>
+          <li><span>Sunday</span> <span>Closed</span></li>
+        </ul>
+        <small>*Holiday hours may vary</small>
+      </section>
 
-        <form class="contact-form" method="post" action="/thankyou.html" onsubmit="submit" name="Contact Form"
-          data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="hpfield">
-          <input class="hidden" name="hpfield">
-          <h2>Get a Free Quote</h2>
+      <form class="contact-form" method="post" action="/thankyou.html" onsubmit="submit" name="Contact Form"
+        data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="hpfield">
+        <input class="hidden" name="hpfield">
+        <h2>Get a Free Quote</h2>
 
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="ex. John Doe" required />
-          </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="ex. John Doe" required />
+        </div>
 
-          <div class="form-group">
-            <label for="phone-number">Phone Number</label>
-            <input id="phone-number" name="phone-number" type="tel" placeholder="ex. 123-456-7890" required />
-          </div>
+        <div class="form-group">
+          <label for="phone-number">Phone Number</label>
+          <input id="phone-number" name="phone-number" type="tel" placeholder="ex. 123-456-7890" required />
+        </div>
 
-          <div class="form-group">
-            <label for="building-type">Building Type</label>
-            <select id="building-type" name="building-type" required>
-              <option value="residential">Residential</option>
-              <option value="commercial">Commercial</option>
-              <option value="apartment">Apartment Complex</option>
-            </select>
-          </div>
+        <div class="form-group">
+          <label for="building-type">Building Type</label>
+          <select id="building-type" name="building-type" required>
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+            <option value="apartment">Apartment Complex</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-            <label>Message: <textarea name="message"></textarea></label>
-          </div>
+        <div class="form-group">
+          <label>Message: <textarea name="message"></textarea></label>
+        </div>
 
-          <div data-netlify-recaptcha="true"></div>
+        <div data-netlify-recaptcha="true"></div>
 
-          <button class="primary-button" type="submit" value="submit">
-            Submit
-          </button>
-        </form>
-      </div>
+        <button class="primary-button" type="submit" value="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </footer>
 
   <div class="bottom-footer-bar full-width content-grid">
@@ -185,6 +184,7 @@
         </li>
       </ul>
     </div>
+  </div>
 
     <script src="/script/footer.js"></script>
 </body>
