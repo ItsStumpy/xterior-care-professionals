@@ -202,7 +202,7 @@ section.services-section {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-block-start: 1rem;
+  margin-block-start: 2rem;
   margin-block-end: 2rem;
   gap: 1.5rem;
 
@@ -259,17 +259,13 @@ section.services-section {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 1rem;
       /*text-align: center;*/
       position: relative;
 
       background-color: var(--secondary-50);
       padding: 0.75rem;
       border-radius: 1rem;
-    }
-
-    .picture-container {
-      height: 70%;
     }
 
     li img {
@@ -292,9 +288,36 @@ section.services-section {
       inset: 0;
     }
 
+    li:hover {
+      background-color: var(--secondary-600);
+
+      a {
+        color: var(--accent);
+      }
+
+      .text {
+        color: var(--page-background);
+      }
+    }
+
     li:hover a {
       color: var(--secondary);
       font-weight: 600;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 550;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .picture-container {
+      height: 70%;
     }
 
     img {
