@@ -210,8 +210,13 @@ section.services-section {
     display: flex;
     gap: 0.75rem;
     justify-content: start;
+    align-self: center;
+    font-weight: bold;
     text-decoration: none;
-    transition: font-weight var(--timing), color var(--timing);
+    background-color: var(--secondary-50);
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    transition: background-color var(--timing), color var(--timing);
   }
 
   a.title:after {
@@ -227,19 +232,20 @@ section.services-section {
     mask-size: 16px 16px;
     mask-repeat: no-repeat;
 
-    transition: mask-size var(--timing), margin-top var(--timing),
-      background-color, var(--timing);
+    /*transition: mask-size var(--timing), margin-top var(--timing),*/
+    /*  background-color, var(--timing);*/
+    transition: background-color var(--timing), color var(--timing);
   }
 
   a.title:hover {
-    color: var(--secondary);
-    font-weight: 550;
+    color: var(--secondary-50);
+    background-color: var(--secondary-600);
   }
 
   a.title:hover:after {
-    mask-size: 18px 18px;
-    background-color: var(--secondary);
-    margin-top: 10px;
+    /*mask-size: 18px 18px;*/
+    background-color: var(--secondary-50);
+    /*margin-top: 10px;*/
   }
 
   ul.services-list {
@@ -254,18 +260,22 @@ section.services-section {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      text-align: center;
+      /*text-align: center;*/
       position: relative;
+
+      background-color: var(--secondary-50);
+      padding: 0.75rem;
+      border-radius: 1rem;
     }
 
     li img {
-      border-radius: 8px;
-      box-shadow: 6px 6px 0px var(--secondary);
+      border-radius: 0.5rem;
+      /*box-shadow: 6px 6px 0px var(--secondary);*/
     }
 
-    li:hover img {
-      box-shadow: 6px 6px 0px var(--accent);
-    }
+    /*li:hover img {*/
+    /*  box-shadow: 6px 6px 0px var(--accent);*/
+    /*}*/
 
     li a {
       text-decoration: none;
