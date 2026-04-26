@@ -1,7 +1,7 @@
 /* Set Up Variables to be Used Across Application */
-@import "variables.css";
-@import "font.css";
-@import "components.css";
+@import "./variables.css";
+@import "./font.css";
+@import "./components.css";
 
 :root {
   interpolate-size: allow-keywords;

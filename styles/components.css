@@ -77,8 +77,22 @@ header nav.navigation-bar {
     gap: 1.5rem;
     font-size: 1.25rem;
 
+    .contact-link {
+      --timing: 0.3s;
+
+      border: 1px solid var(--primary);
+      border-radius: 999px;
+      padding: 0.25rem 0.5rem;
+      transition: background-color var(--timing);
+    }
+
+    .contact-link:hover {
+      background-color: var(--secondary-50);
+    }
+
     @media screen and (min-width: 768px) {
       display: flex;
+      align-items: center;
     }
   }
 }
@@ -158,6 +172,11 @@ footer {
 
     button {
       justify-self: start;
+    }
+
+    .message-area {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

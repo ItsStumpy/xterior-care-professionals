@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xterior Care Professionals</title>
   <meta name="description" content="" />
-  <link rel="stylesheet" href="/styles/global.css" />
-  <link rel="stylesheet" href="/styles/pages/home.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/pages/home.css" />
 </head>
 
 <body class="home">
@@ -20,7 +19,7 @@
       <ul>
         <li><a href="/services">Services</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li class="contact-link"><a href="#contact-form">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -28,15 +27,13 @@
   <main class="content-grid">
     <section class="hero-section">
       <div class="text-content">
-        <h1 class="title">Pressure Washing at&nbsp;the Right&nbsp;Cost</h1>
+        <h1 class="title">Quality Pressure Washing<br>You Can Count On</h1>
         <p class="text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-          perspiciatis modi libero aliquid beatae soluta repellat deleniti
-          iure minima, reprehenderit quisquam aliquam repellendus totam. Eum
-          cumque tenetur tempora? Numquam, iste.
+          We&apos;re a local pressure washing company that takes pride in doing the job right the first time.
+          From driveways to decks, we treat every home like it&apos;s our own.
         </p>
       </div>
-      <img src="/assets/images/pic_0.jpg" alt="" class="hero-image" />
+      <img src="assets/images/concrete/concrete_2.jpg" alt="" class="hero-image" />
     </section>
 
     <div class="full-width services-container">
@@ -45,7 +42,7 @@
         <ul class="services-list">
           <li class="card">
             <div class="picture-container">
-              <img src="/assets/images/pic_8.jpg" alt="" />
+              <img src="assets/images/residential/residential_4.jpg" alt="" />
             </div>
             <div class="card-body">
               <a class="card-title" href="/services/#residential">Residential</a>
@@ -54,7 +51,7 @@
           </li>
           <li class="card">
             <div class="picture-container">
-              <img src="/assets/images/pic_3.jpg" alt="" />
+              <img src="assets/images/commercial/commercial_1.jpg" alt="" />
             </div>
             <div class="card-body">
               <a class="card-title" href="/services/#commercial">Commercial</a>
@@ -63,7 +60,7 @@
           </li>
           <li class="card">
             <div class="picture-container">
-              <img src="/assets/images/pic_7.jpg" alt="" />
+              <img src="assets/images/apartment/apartment_11.jpg" alt="" />
             </div>
             <div class="card-body">
               <a class="card-title" href="/services/#apartment-complexes">Apartment Complex</a>
@@ -76,25 +73,24 @@
 
     <section class="affordable-section">
       <div class="content">
-        <h2 class="title">Affordable Pressure Washing</h2>
+        <h2 class="title">Pressure Washing Done Right,<br>By People You Can Trust</h2>
         <p class="text-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-          voluptatem impedit minima, quasi aspernatur necessitatibus totam
-          magnam quia dolore aut deleniti velit ut explicabo facere aliquam a
-          soluta illum maiores.
+          We know you have options, and we don&apos;t take your trust lightly.
+          That&apos;s why we show up on time, use proven techniques, and leave your property looking its best every single visit.
+          No shortcuts, no surprises, just reliable work from a team that genuinely cares.
         </p>
         <ul class="details-list">
           <li class="quote">
-            <span>Free Quote</span>
+            <span>Free Quote &dash; No pressure, just an honest estimate</span>
           </li>
           <li class="person">
-            <span>Commercial & Residential</span>
+            <span>Commercial & Residential &dash; We handle it all</span>
           </li>
           <li class="paper">
-            <span>Licensed & Insured</span>
+            <span>Licensed & Insured &dash; Your home is in safe hands</span>
           </li>
         </ul>
-        <a href="/contact" class="primary-button">Contact Us</a>
+        <a href="/contact" class="primary-button">Get in Touch With Us</a>
       </div>
       <div class="logo-container">
         <img class="logo-accent" src="assets/svgs/xterior-care-professionals-logo-emblem.svg" alt="" />
@@ -102,26 +98,22 @@
     </section>
 
     <section class="faq-section">
-      <h2>FAQs</h2>
+      <h2>FAQ</h2>
 
       <details name="faq">
         <summary>
           <span>How long does a typical pressure washing job last?</span>
         </summary>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut
-          nisi quisquam quaerat. Rem consectetur nulla, eligendi deleniti, ad
-          error, magni unde harum consequuntur eaque omnis nihil ex
-          exercitationem magnam.
+          Most jobs take between 1&dash;3 hours depending on the size of the area.
+          We&apos;ll give you a realistic time estimate upfront so you can plan your day without any surprises.
         </p>
       </details>
       <details name="faq">
-        <summary><span>How long?</span></summary>
+        <summary><span>Do you use any harmful chemicals that could damage my home?</span></summary>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut
-          nisi quisquam quaerat. Rem consectetur nulla, eligendi deleniti, ad
-          error, magni unde harum consequuntur eaque omnis nihil ex
-          exercitationem magnam.
+          Not a chance. We use safe, industry&dash;approved cleaning solutions that are tough on grime
+          but gentle on your surfaces, landscaping, and family &dash; including the four&dash;legged members.
         </p>
       </details>
     </section>
@@ -143,10 +135,21 @@
         <small>*Holiday hours may vary</small>
       </section>
 
-      <form class="contact-form" method="post" action="/thankyou.html" onsubmit="submit" name="Contact Form"
-        data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="hpfield">
-        <input class="hidden" name="hpfield">
-        <h2>Get a Free Quote</h2>
+      <form
+        id="contact-form"
+        class="contact-form"
+        method="post"
+        action="/thankyou.html"
+        onsubmit="submit()"
+        name="Contact Form"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        netlify-honeypot="hpfield"
+      >
+        <label hidden>
+          <input class="hidden" name="hpfield">
+        </label>
+        <h2>Tell Us About Your Needs</h2>
 
         <div class="form-group">
           <label for="name">Name</label>
@@ -155,7 +158,13 @@
 
         <div class="form-group">
           <label for="phone-number">Phone Number</label>
-          <input id="phone-number" name="phone-number" type="tel" placeholder="ex. 123-456-7890" required />
+          <input
+            id="phone-number"
+            name="phone-number"
+            type="tel"
+            placeholder="ex. 123-456-7890"
+            required
+          />
         </div>
 
         <div class="form-group">
@@ -168,7 +177,7 @@
         </div>
 
         <div class="form-group">
-          <label>Message: <textarea name="message"></textarea></label>
+          <label class="message-area">Message: <textarea name="message"></textarea></label>
         </div>
 
         <div data-netlify-recaptcha="true"></div>
@@ -201,7 +210,7 @@
     </div>
   </div>
 
-    <script src="/script/footer.js"></script>
+    <script src="script/footer.js"></script>
 </body>
 
 </html>

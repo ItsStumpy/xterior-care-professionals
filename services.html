@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/pages/home.css" />
-    <link rel="stylesheet" href="/styles/pages/services.css" />
+    <title>Xterior Care Professionals</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/pages/home.css" />
+    <link rel="stylesheet" href="styles/pages/services.css" />
   </head>
   <body class="services">
     <!-- Navigation Module -->
@@ -14,7 +14,7 @@
       <nav class="navigation-bar">
         <a href="/">
           <img
-            src="/assets/svgs/xterior-care-professionals-logo.svg"
+            src="assets/svgs/xterior-care-professionals-logo.svg"
             alt=""
             class="nav-logo"
           />
@@ -36,16 +36,16 @@
           <a class="h2 title" href="#">Services</a>
           <ul class="services-list">
             <li>
-              <img src="" alt="" />
-              <a href="/services/#residential">Residential</a>
+              <img src="assets/images/residential/residential_4.jpg" alt="" />
+              <a href="#residential">Residential</a>
             </li>
             <li>
-              <img src="" alt="" />
-              <a href="/services/#commercial">Commercial</a>
+              <img src="assets/images/apartment/apartment_7.jpg" alt="" />
+              <a href="#commercial">Commercial</a>
             </li>
             <li>
-              <img src="" alt="" />
-              <a href="/services/#aparment-complexes">Apartment Complex</a>
+              <img src="assets/images/apartment/apartment_11.jpg" alt="" />
+              <a href="#apartment-complex">Apartment Complex</a>
             </li>
           </ul>
         </section>
@@ -149,64 +149,39 @@
 
           <figure>
             <img
-              src="https://placehold.co/600x400"
+              src="assets/images/residential/residential_0.jpg"
               alt="description of pressure washing job"
             />
-            <figcaption>Name of business, Month Year</figcaption>
+            <figcaption>February 2026</figcaption>
           </figure>
 
           <figure>
             <img
-              src="https://placehold.co/600x400"
+              src="assets/images/concrete/concrete_3.jpg"
               alt="description of pressure washing job"
             />
+            <figcaption>Concrete Work, February 2026</figcaption>
           </figure>
 
           <figure>
             <img
-              src="https://placehold.co/600x400"
+              src="assets/images/residential/residential_1.jpg"
               alt="description of pressure washing job"
             />
+            <figcaption>February 2026</figcaption>
           </figure>
 
           <figure>
             <img
-              src="https://placehold.co/600x400"
+              src="assets/images/residential/residential_4.jpg"
               alt="description of pressure washing job"
             />
-          </figure>
-
-          <figure>
-            <img
-              src="https://placehold.co/600x400"
-              alt="description of pressure washing job"
-            />
-          </figure>
-
-          <figure>
-            <img
-              src="https://placehold.co/600x400"
-              alt="description of pressure washing job"
-            />
-          </figure>
-
-          <figure>
-            <img
-              src="https://placehold.co/600x400"
-              alt="description of pressure washing job"
-            />
-          </figure>
-
-          <figure>
-            <img
-              src="https://placehold.co/600x400"
-              alt="description of pressure washing job"
-            />
+            <figcaption>March 2026</figcaption>
           </figure>
         </section>
       </div>
 
-      <!-- Commerical Section -->
+      <!-- Commercial Section -->
       <div id="commercial">
         <!-- Affordable  -->
         <section class="affordable-section">
@@ -267,7 +242,7 @@
 
           <figure>
             <img
-              src="https://placehold.co/600x400"
+              src="assets/images/commercial/commercial_0.jpg"
               alt="description of pressure washing job"
             />
             <figcaption>Name of business, Month Year</figcaption>
@@ -468,18 +443,32 @@
           <small>*Holiday hours may vary</small>
         </section>
 
-        <form class="contact-form" id="contact">
-          <h2>Get a Free Quote</h2>
+        <form
+          id="contact-form"
+          class="contact-form"
+          method="post"
+          action="/thankyou.html"
+          onsubmit="submit()"
+          name="Contact Form"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          netlify-honeypot="hpfield"
+        >
+          <label hidden>
+            <input class="hidden" name="hpfield">
+          </label>
+          <h2>Tell Us About Your Needs</h2>
 
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="ex. John Doe" required />
+            <input id="name" name="name" type="text" placeholder="ex. John Doe" required />
           </div>
 
           <div class="form-group">
             <label for="phone-number">Phone Number</label>
             <input
               id="phone-number"
+              name="phone-number"
               type="tel"
               placeholder="ex. 123-456-7890"
               required
@@ -488,12 +477,18 @@
 
           <div class="form-group">
             <label for="building-type">Building Type</label>
-            <select id="building-type" required>
+            <select id="building-type" name="building-type" required>
               <option value="residential">Residential</option>
-              <option value="commercial">Commerical</option>
+              <option value="commercial">Commercial</option>
               <option value="apartment">Apartment Complex</option>
             </select>
           </div>
+
+          <div class="form-group">
+            <label class="message-area">Message: <textarea name="message"></textarea></label>
+          </div>
+
+          <div data-netlify-recaptcha="true"></div>
 
           <button class="primary-button" type="submit" value="submit">
             Submit
@@ -533,6 +528,6 @@
       </div>
     </div>
 
-    <script src="/script/footer.js"></script>
+    <script src="script/footer.js"></script>
   </body>
 </html>
