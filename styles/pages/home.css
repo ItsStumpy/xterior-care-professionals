@@ -1,3 +1,7 @@
+.content-grid {
+  gap: 2rem;
+}
+
 /* If image does not have a source, then add a placeholder background image until it has an image source. */
 img[src=""] {
   background-image: url("https://placehold.co/400");
@@ -197,14 +201,27 @@ section.affordable-section {
 
 .services-container {
   background-color: var(--primary);
-  background-image: url("/assets/svgs/wave-with-pwgun.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media screen and (max-width: 767px) {
   .services-container {
     background-image: url("/assets/svgs/wave.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-container img.background-image {
+    position: absolute;
+    height: 77%;
+    top: 432px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .services-container img.background-image {
+    height: 65%;
+    top: 432px;
+    left: 4px;
   }
 }
 
