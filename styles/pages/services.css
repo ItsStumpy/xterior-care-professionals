@@ -4,6 +4,10 @@
   cursor: default;
 }
 
+.primary-button {
+  z-index: 1;
+}
+
 .packages-section {
   margin-block: 0px 4rem;
 

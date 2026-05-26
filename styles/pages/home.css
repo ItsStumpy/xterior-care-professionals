@@ -10,6 +10,10 @@ img[src=""] {
   height: 200px;
 }
 
+.primary-button {
+  z-index: 1;
+}
+
 section.hero-section {
   display: grid;
   margin-block: 1rem;
