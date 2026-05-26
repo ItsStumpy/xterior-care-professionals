@@ -276,8 +276,8 @@ footer {
     color: var(--tertiary-600);
     block-size: 0;
 
-    transition: block-size 0.5s, content-visibility 0.5s;
-    transition-behavior: allow-discrete;
+    /* transition: block-size 0.5s, content-visibility 0.5s;
+    transition-behavior: allow-discrete; */
   }
 
   details[open]::details-content {
@@ -293,13 +293,18 @@ footer {
       var(--tertiary-300),
       var(--secondary-500)
     );
-    transition: border-image-source 0.5s;
+    /* transition: border-image-source 0.5s; */
   }
 
   details > p {
     padding-block: 1rem;
   }
 
-  summary {
+  details.js-accordion {
+    overflow: hidden;
+  }
+
+  details.js-accordion > :not(summary) {
+    overflow: hidden;
   }
 }

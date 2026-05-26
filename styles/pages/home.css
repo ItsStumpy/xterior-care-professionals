@@ -1,6 +1,6 @@
-.content-grid {
+/* .content-grid {
   gap: 2rem;
-}
+} */
 
 /* If image does not have a source, then add a placeholder background image until it has an image source. */
 img[src=""] {
@@ -200,28 +200,18 @@ section.affordable-section {
 }
 
 .services-container {
-  background-color: var(--primary);
+  background-image: url("/assets/svgs/wave-with-pwgun.svg");
+  background-size: 100% auto;   
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 @media screen and (max-width: 767px) {
   .services-container {
+    background-color: var(--secondary-100);
     background-image: url("/assets/svgs/wave.svg");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .services-container img.background-image {
-    position: absolute;
-    height: 77%;
-    top: 432px;
-  }
-}
-
-@media screen and (min-width: 1921px) {
-  .services-container img.background-image {
-    height: 65%;
-    top: 432px;
-    left: 4px;
   }
 }
 
@@ -232,6 +222,7 @@ section.services-section {
   flex-direction: column;
   margin-block-start: 2rem;
   margin-block-end: 2rem;
+  padding-block-start: calc(528 / 1440 * 50%);
   gap: 4rem;
 
   a.title {
@@ -243,25 +234,14 @@ section.services-section {
     text-decoration: none;
     background-color: var(--accent);
     border-radius: .5rem;
-    padding: .5rem 2rem;
+    padding: .5rem .75rem;
     transition: background-color var(--timing), color var(--timing);
   }
 
-  a.title:after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    max-width: 20px;
-    aspect-ratio: 1;
-    margin-top: 12px;
-    background-color: var(--tertiary);
-    mask-image: url("../../assets/svgs/diagonal-arrow.svg");
-    mask-size: 16px 16px;
-    mask-repeat: no-repeat;
-
-    /*transition: mask-size var(--timing), margin-top var(--timing),*/
-    /*  background-color, var(--timing);*/
+  a.title .arrow-icon {
+    background-color: var(--page-background);
+    border-radius: .25rem;
+    padding: .5rem;
     transition: background-color var(--timing), color var(--timing);
   }
 
@@ -277,8 +257,10 @@ section.services-section {
   }
 
   ul.services-list {
-    /* display: flex; */
-    width: 100%;
+    --widthValue: min(6vw, 150px);
+    width: calc(100% + var(--widthValue, 0));
+    translate: calc(var(--widthValue, 0)*-1/2);
+    display: flex;
     flex-direction: column;
     gap: 2rem;
     list-style: none;
@@ -286,11 +268,11 @@ section.services-section {
     li {
       cursor: pointer;
       width: 100%;
-      display: flex;
-      flex-direction: column;
+      display: grid;
       gap: 1rem;
       position: relative;
       border-radius: 1rem;
+      grid-template-rows: 1fr auto;
 
       transition: background-color var(--timing);
     }
@@ -310,15 +292,14 @@ section.services-section {
       inset: 0;
     }
 
-    
-
     .card-body {
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
       gap: 0.25rem;
-      transform: translateY(-170%);
-      /* margin: 0 auto; */
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-bottom: 30px;
+      z-index: 1;
 
       transition: color var(--timing);
 
@@ -332,7 +313,6 @@ section.services-section {
         padding: 0.5rem;
         text-align: center;
         display: inline-block;
-        
         
         transition: color var(--timing);
       }
@@ -350,11 +330,18 @@ section.services-section {
     }
 
     .picture-container {
-      height: 70%;
+      height: auto;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1/1;
+      grid-column: 1/2;
+      grid-row: 1/3;
     }
     
     img {
       box-shadow: 8px 8px 4px var(--secondary);
+      position: absolute;
+      inset: 0;
     }
 
     li:hover {
@@ -367,12 +354,18 @@ section.services-section {
         color: var(--page-background);
       }
     }
+
+    @media screen and (min-width: 1440px) {
+      ul.services-list {
+        --widthValue: min(10vw, 100px);
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
     ul.services-list {
-      display: flex;
       flex-direction: row;
     }
   }
 }
+

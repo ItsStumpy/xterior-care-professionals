@@ -34,7 +34,8 @@
   --red: #f68989;
 
   /* Page Background */
-  --page-background: #fcfcfc;
+  /* --page-background: #fcfcfc; */
+  --page-background: #fff;
 
   --tablet-size: 768px;
 }
