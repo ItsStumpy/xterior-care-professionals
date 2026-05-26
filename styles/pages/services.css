@@ -1,5 +1,9 @@
 @import "variables.css";
 
+.services-section .title {
+  cursor: default;
+}
+
 .packages-section {
   margin-block: 0px 4rem;
 

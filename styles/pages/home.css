@@ -266,7 +266,6 @@ section.services-section {
     list-style: none;
 
     li {
-      cursor: pointer;
       width: 100%;
       display: grid;
       gap: 1rem;
@@ -293,6 +292,7 @@ section.services-section {
     }
 
     .card-body {
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       gap: 0.25rem;

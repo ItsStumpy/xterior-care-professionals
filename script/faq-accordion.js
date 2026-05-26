@@ -17,8 +17,8 @@ allDetails.forEach(details => {
         e.preventDefault();
 
         if (details._isOpen) {
-            console.log('inline height:', wrapper.style.height);
-            console.log('scrollHeight:', wrapper.scrollHeight);
+            // console.log('inline height:', wrapper.style.height);
+            // console.log('scrollHeight:', wrapper.scrollHeight);
             wrapper.style.height = wrapper.scrollHeight + 'px';
             requestAnimationFrame(() => {
                 wrapper.style.height = '0';
